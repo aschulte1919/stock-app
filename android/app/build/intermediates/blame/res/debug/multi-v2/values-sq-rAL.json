@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/annschulte/Documents/FinanceReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml",
+            "outputFile": "/Users/annschulte/Documents/stock-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml",
             "map": [
                 {
                     "source": "/Users/annschulte/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/47d69e3b28311d1b15b8331bd314c1c3/res/values-sq-rAL/values-sq-rAL.xml",

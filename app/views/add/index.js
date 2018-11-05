@@ -13,18 +13,19 @@ const styles = StyleSheet.create({
   },
   topBlock: {
     backgroundColor: '#202020',
-    paddingTop: 15,
+    paddingTop: 30,
     paddingBottom: 10,
     paddingLeft: 15,
     paddingRight: 15,
   },
   helpText: {
-    color: 'black',
+    color: 'white',
     fontSize: 12,
+    paddingBottom: 10,
     alignSelf: 'center',
   },
   searchBar: {
-    marginTop: 10,
+    marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -35,10 +36,10 @@ const styles = StyleSheet.create({
   searchBarInput: {
     flex: 4,
     flexDirection: 'column',
-    height: 30,
+    height: 40,
     backgroundColor: '#424242',
     borderRadius: 4,
-    color: 'black',
+    color: 'white',
     paddingLeft: 10,
   },
   clearIcon: {

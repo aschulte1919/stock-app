@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     marginTop: 20,
-    backgroundColor: '#ffffff',
+    backgroundColor: 'white',
   },
   titleText: {
     fontSize: 12,
@@ -29,7 +29,7 @@ export default class NewsCell extends React.Component {
         onPress={() => Linking.openURL(
           this.props.news.link,
         ).catch(err => console.error('An error occurred', err))}
-        underlayColor="#202020"
+        underlayColor="white"
       >
         <View style={styles.container}>
           <Text style={styles.titleText}>

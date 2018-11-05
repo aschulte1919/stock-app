@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 10,
     paddingRight: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderColor: 'black',
+    paddingBottom: 20,
   },
   nameBlock: {
     flex: 1,
@@ -46,11 +50,11 @@ const styles = StyleSheet.create({
   },
   separatorThin: {
     height: StyleSheet.hairlineWidth,
-    backgroundColor: '#A6A6A6',
+    backgroundColor: 'grey',
   },
   propertyText: {
     fontSize: 12,
-    color: '#A6A6A6',
+    color: 'black',
     textAlign: 'left',
   },
   valueText: {

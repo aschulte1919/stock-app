@@ -8,14 +8,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingLeft: 15,
-    paddingRight: 15,
+    paddingRight: 15,   
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderColor: 'black',
   },
 });
 
 export default class NewsPage extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       dataSource: new ListView.DataSource({ rowHasChanged: (row1, row2) => row1 !== row2 }),
       key: Math.random(),

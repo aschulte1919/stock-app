@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.fresco:fresco-1.3.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8b088159b5958f6813fd28bc0dd6b98a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/8b088159b5958f6813fd28bc0dd6b98a/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

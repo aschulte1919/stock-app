@@ -96,7 +96,6 @@ export default class Settings extends React.Component {
 
   componentDidMount() {
     StockStore.listen(state => this.onStockStoreChange(state));
-
     StockActions.updateStocks();
   }
 
@@ -141,7 +140,7 @@ export default class Settings extends React.Component {
         <Icon.ToolbarAndroid
           style={styles.toolbar}
           title={this.props.title}
-          titleColor="white"
+          titleColor="black"
           actions={[
             { title: 'Add', iconName: 'add', iconSize: 26, show: 'always' },
             { title: 'Done', iconName: 'check', iconSize: 26, show: 'always' },
@@ -162,35 +161,6 @@ export default class Settings extends React.Component {
             dataSource={this.state.dataSource}
             renderRow={stock => <StockCell stock={stock} watchlistResult={this.state.watchlistResult} />}
           />
-        </View>
-        <View style={styles.bottomBlock}>
-          <TouchableHighlight
-            style={[styles.buttonLeft, this.state.selectedProperty === 'ChangeinPercent' ? styles.buttonSelected : null]}
-            underlayColor="#66CCFF"
-            onPress={() => StockActions.selectProperty('ChangeinPercent')}
-          >
-            <Text style={[styles.buttonText, this.state.selectedProperty === 'ChangeinPercent' ? styles.buttonTextSelected : null]}>
-              percentage
-            </Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-            style={[styles.buttonMiddle, this.state.selectedProperty === 'Change' ? styles.buttonSelected : null]}
-            underlayColor="#66CCFF"
-            onPress={() => StockActions.selectProperty('Change')}
-          >
-            <Text style={[styles.buttonText, this.state.selectedProperty === 'Change' ? styles.buttonTextSelected : null]}>
-              price
-            </Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-            style={[styles.buttonRight, this.state.selectedProperty === 'MarketCapitalization' ? styles.buttonSelected : null]}
-            underlayColor="#66CCFF"
-            onPress={() => StockActions.selectProperty('MarketCapitalization')}
-          >
-            <Text style={[styles.buttonText, this.state.selectedProperty === 'MarketCapitalization' ? styles.buttonTextSelected : null]}>
-              market cap
-            </Text>
-          </TouchableHighlight>
         </View>
       </View>
     );

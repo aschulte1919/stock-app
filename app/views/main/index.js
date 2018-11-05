@@ -7,7 +7,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import StockActions from '../../actions/stock-action';
 import StockStore from '../../stores/stock-store';
 import StockCell from './elements/stock-cell';
-import ChartPage from './elements/chart-page';
 import DetailsPage from './elements/details-page';
 import NewsPage from './elements/news-page';
 
@@ -26,13 +25,13 @@ const styles = StyleSheet.create({
   },
   detailedBlock: {
     flex: 5,
-    backgroundColor: '#202020',
+    backgroundColor: 'white',
     justifyContent: 'space-between',
   },
   footerBlock: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: '#202020',
+    backgroundColor: 'grey',
     alignItems: 'center',
     paddingLeft: 10,
     paddingRight: 10,
@@ -59,7 +58,7 @@ const styles = StyleSheet.create({
   },
   marketTimeText: {
     fontSize: 12,
-    color: '#A6A6A6',
+    color: 'white',
     textAlign: 'center',
   },
   settings: {
@@ -67,6 +66,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   icon: {
+    color: 'white',
     width: 20,
     height: 20,
   },
@@ -86,7 +86,6 @@ export default class Main extends React.Component {
 
   componentDidMount() {
     StockStore.listen(state => this.onStockStoreChange(state));
-
     StockActions.updateStocks();
   }
 
@@ -112,7 +111,7 @@ export default class Main extends React.Component {
 
   renderDotIndicator() {
     return (
-      <PagerDotIndicator pageCount={3} />
+      <PagerDotIndicator pageCount={2} />
     );
   }
 
@@ -142,9 +141,6 @@ export default class Main extends React.Component {
               <DetailsPage stock={this.state.selectedStock} watchlistResult={this.state.watchlistResult} />
             </View>
             <View>
-              <ChartPage stock={this.state.selectedStock} />
-            </View>
-            <View>
               <NewsPage key={this.state.key} stock={this.state.selectedStock} />
             </View>
           </IndicatorViewPager>
@@ -159,20 +155,15 @@ export default class Main extends React.Component {
             underlayColor="#202020"
           >
             <Text style={styles.yahooText}>
-              More Stock/Finance Data!
+              More Stock Data
             </Text>
           </TouchableHighlight>
-          <View style={styles.footerMiddle}>
-            <Text style={styles.marketTimeText}>
-              Market closed
-            </Text>
-          </View>
           <TouchableHighlight
             style={styles.settings}
             onPress={Actions.settings}
             underlayColor="#202020"
           >
-            <Icon name="menu" color="black" size={22} />
+            <Icon name="menu" color="white" size={22} />
           </TouchableHighlight>
         </View>
       </View>

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.facebook.fbui.textlayoutbuilder:textlayoutbuilder-1.0.0">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/adbd3c61c4638d612517764c2ecd8ee4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/adbd3c61c4638d612517764c2ecd8ee4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/adbd3c61c4638d612517764c2ecd8ee4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

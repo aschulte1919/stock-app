@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   marketText: {
     fontSize: 15,
-    color: '#A6A6A6',
+    color: 'black',
     textAlign: 'left',
     marginTop: 10,
     marginBottom: 5,
