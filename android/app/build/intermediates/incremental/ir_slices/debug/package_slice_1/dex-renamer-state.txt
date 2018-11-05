@@ -1,0 +1,4 @@
+#Mon Oct 29 19:03:18 MDT 2018
+base.0=/Users/annschulte/Documents/FinanceReactNative/android/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
